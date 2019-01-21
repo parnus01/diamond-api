@@ -10,6 +10,9 @@
     "postinstall": "tsc --sourceMap false",
     "start": "node dist/server.js"
   },
+  "engines" : {
+     "node": "10.3.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
