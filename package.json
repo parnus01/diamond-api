@@ -7,7 +7,8 @@
     "lint": "tslint --project tsconfig.json --format stylish",
     "build": "tsc",
     "serve": "ts-node src/server.ts",
-    "start": "nodemon"
+    "postinstall": "tsc --sourceMap false",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
