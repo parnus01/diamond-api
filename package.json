@@ -1,30 +1,37 @@
 {
-  "name": "node-koa-api",
-  "version": "0.0.0",
-  "private": true,
+  "name": "koa-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./src/server/index.js",
-    "test": "./node_modules/mocha/bin/_mocha ./test/**/*.test.js"
+    "lint": "tslint --project tsconfig.json --format stylish",
+    "build": "tsc",
+    "serve": "ts-node src/server.ts",
+    "start": "nodemon"
   },
   "keywords": [],
-  "author": "Michael Herman",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "chai": "4.1.1",
-    "chai-http": "^3.0.0",
-    "mocha": "3.5.0",
-    "sinon": "^4.1.5"
+    "@types/http-status-codes": "^1.2.0",
+    "@types/koa": "^2.0.47",
+    "@types/koa-bodyparser": "^4.2.1",
+    "@types/koa-router": "^7.0.35",
+    "@types/node": "^10.12.18",
+    "http-status-codes": "^1.3.0",
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "nodemon": "^1.18.9",
+    "pg": "^7.7.1",
+    "reflect-metadata": "^0.1.12",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.12.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typeorm": "^0.2.9",
+    "typescript": "^3.2.2"
   },
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "knex": "^0.13.0",
-    "koa": "^2.3.0",
-    "koa-bodyparser": "^4.2.0",
-    "koa-passport": "^4.0.1",
-    "koa-redis": "^3.1.1",
-    "koa-router": "^7.2.1",
-    "koa-session": "^5.5.1",
-    "passport-local": "^1.0.0",
-    "pg": "^7.1.2"
+    "koa-load-routes": "^3.0.1"
   }
 }
